@@ -60,6 +60,12 @@
     self.timerToRefresh = [NSTimer scheduledTimerWithTimeInterval:(1.0) target:self selector:@selector(timerToRefreshFunc:) userInfo:nil repeats:NO];
 }
 
+-(void) eventChanged
+{
+    [self dismissModalViewControllerAnimated:YES];
+    self.timerToRefresh = [NSTimer scheduledTimerWithTimeInterval:(0.1) target:self selector:@selector(timerToRefreshFunc:) userInfo:nil repeats:NO];
+}
+
 - (void)timerToRefreshFunc:(NSTimer *)timer 
 {
     [self.timerToRefresh invalidate];
@@ -109,6 +115,11 @@
         
         NSLog(@"Last Tweet %@ and Image %@", user.lastTweet, user.imageUrl);
         
+        if ( user.lastTweet == nil) {
+            user.lastTweet = @"No recent status";
+            user.imageUrl = @"https://si0.twimg.com/a/1327685130/images/about-birds.png";
+        }
+        
         [self.pointsToDisplay addObject:user];
     }
            
@@ -129,7 +140,8 @@
         tUser.Y = self.trackingManager.lastLocation.coordinate.longitude;
         tUser.bInAppUser = NO;
         
-        [self.pointsToDisplay addObject:tUser];
+        if ( tUser.lastTweet != nil && tUser.lastTweet.length > 0)
+            [self.pointsToDisplay addObject:tUser];
     }
     
     [self addArrayToMap:self.pointsToDisplay];
@@ -156,9 +168,16 @@
     NSArray *theArray = [NSDictionary dictionaryWithJSONString:JsonString error:&error];
     NSLog(@"response Dictionary %@", theArray);
     
-    NSDictionary *theDictionary = [theArray objectAtIndex:0];
-    userTweet.lastTweet = [theDictionary objectForKey:@"text"];
-    userTweet.imageUrl = [[theDictionary objectForKey:@"user"] objectForKey:@"profile_image_url"];
+    if ( theArray.count > 0 ) {
+        @try {
+            NSDictionary *theDictionary = [theArray objectAtIndex:0];
+            userTweet.lastTweet = [theDictionary objectForKey:@"text"];
+            userTweet.imageUrl = [[theDictionary objectForKey:@"user"] objectForKey:@"profile_image_url"];
+        }
+        @catch (NSException *exception) {
+            NSLog(@"Failed at tweet %@", exception);
+        }
+    }
     
     //user ->
     //profile_image_url
@@ -250,6 +269,8 @@
 -(void) wantToDismiss
 {
     [self dismissModalViewControllerAnimated:YES];
+    
+    self.timerToRefresh = [NSTimer scheduledTimerWithTimeInterval:(0.1) target:self selector:@selector(timerToRefreshFunc:) userInfo:nil repeats:NO];
 }
 
 - (MKAnnotationView *)mapView:(MKMapView *)theMapView viewForAnnotation:(id <MKAnnotation>)annotation

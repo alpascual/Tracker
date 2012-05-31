@@ -13,6 +13,8 @@
 @synthesize delegate = _delegate;
 @synthesize tableView = _tableView;
 @synthesize peopleArray = _peopleArray;
+@synthesize segmentChange = _segmentChange;
+@synthesize utilTimer = _utilTimer;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -39,6 +41,9 @@
     // Do any additional setup after loading the view from its nib.
     
     [self.tableView reloadData];
+    
+    UISwipeGestureRecognizer *sw = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipeFromD:)];
+    [self.view addGestureRecognizer:sw];
 }
 
 - (void)viewDidUnload
@@ -56,8 +61,23 @@
 
 - (IBAction)changePage:(id)sender {
     // Send event
-    
+   
     [self.delegate wantToDismiss];
+    
+}
+
+-(void) wantToDismissTable {
+    [self dismissModalViewControllerAnimated:YES];
+    
+    self.segmentChange.selectedSegmentIndex = 0;
+}
+
+- (IBAction)showTable:(id)sender {
+    
+    EventsTable *event = [[EventsTable alloc] initWithNibName:@"EventsTable" bundle:nil]; 
+    event.delegate = self;
+    [self presentModalViewController:event animated:YES];
+    
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -110,5 +130,19 @@
 {   
     return 90;
 }
+
+-(void) eventSelected
+{
+    [self dismissModalViewControllerAnimated:YES];
+    
+    self.utilTimer = [NSTimer scheduledTimerWithTimeInterval:(0.3) target:self selector:@selector(timerToRefreshFunc:) userInfo:nil repeats:NO];
+}
+
+- (void)timerToRefreshFunc:(NSTimer *)timer {
+    [self.delegate eventChanged];
+    self.utilTimer = nil;
+}
+
+
 
 @end

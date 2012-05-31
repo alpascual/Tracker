@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		763212E014D4C4E80048C75A /* EventsTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 763212DE14D4C4E80048C75A /* EventsTable.m */; };
+		763212E114D4C4E80048C75A /* EventsTable.xib in Resources */ = {isa = PBXBuildFile; fileRef = 763212DF14D4C4E80048C75A /* EventsTable.xib */; };
+		763D84B814DE1221008ECB99 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 763D84B714DE1221008ECB99 /* iAd.framework */; };
 		76BB2E0A14C657F00030E504 /* TrackingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BB2E0914C657F00030E504 /* TrackingManager.m */; };
 		76BB2E0D14C65A990030E504 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76BB2E0C14C65A990030E504 /* CoreLocation.framework */; };
 		76BB2E0F14C65B5A0030E504 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76BB2E0E14C65B5A0030E504 /* SystemConfiguration.framework */; };
@@ -54,6 +57,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		763212DD14D4C4E80048C75A /* EventsTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventsTable.h; sourceTree = "<group>"; };
+		763212DE14D4C4E80048C75A /* EventsTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventsTable.m; sourceTree = "<group>"; };
+		763212DF14D4C4E80048C75A /* EventsTable.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventsTable.xib; sourceTree = "<group>"; };
+		763D84B714DE1221008ECB99 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		76BB2E0814C657F00030E504 /* TrackingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackingManager.h; sourceTree = "<group>"; };
 		76BB2E0914C657F00030E504 /* TrackingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackingManager.m; sourceTree = "<group>"; };
 		76BB2E0C14C65A990030E504 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -126,6 +133,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				763D84B814DE1221008ECB99 /* iAd.framework in Frameworks */,
 				76BB2E1514C660330030E504 /* MapKit.framework in Frameworks */,
 				76BB2E0F14C65B5A0030E504 /* SystemConfiguration.framework in Frameworks */,
 				76BB2E0D14C65A990030E504 /* CoreLocation.framework in Frameworks */,
@@ -183,6 +191,7 @@
 		76CCB5CF14C6425E00552E3D = {
 			isa = PBXGroup;
 			children = (
+				763D84B714DE1221008ECB99 /* iAd.framework */,
 				76BB2E1414C660330030E504 /* MapKit.framework */,
 				76BB2E0E14C65B5A0030E504 /* SystemConfiguration.framework */,
 				76BB2E0C14C65A990030E504 /* CoreLocation.framework */,
@@ -236,6 +245,9 @@
 				76C43ED414C756480009F29A /* TweetsTablesView.xib */,
 				76C43ED714C7960F0009F29A /* TweetUserInfo.h */,
 				76C43ED814C7960F0009F29A /* TweetUserInfo.m */,
+				763212DD14D4C4E80048C75A /* EventsTable.h */,
+				763212DE14D4C4E80048C75A /* EventsTable.m */,
+				763212DF14D4C4E80048C75A /* EventsTable.xib */,
 			);
 			path = Tracker;
 			sourceTree = "<group>";
@@ -315,7 +327,7 @@
 		76CCB5D114C6425E00552E3D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0430;
 			};
 			buildConfigurationList = 76CCB5D414C6425E00552E3D /* Build configuration list for PBXProject "Tracker" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -359,6 +371,7 @@
 				76C43EDD14C7DE6B0009F29A /* Icon-72.png in Resources */,
 				76C43EDE14C7DE6B0009F29A /* Icon.png in Resources */,
 				76C43EDF14C7DE6B0009F29A /* Icon@2x.png in Resources */,
+				763212E114D4C4E80048C75A /* EventsTable.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,6 +400,7 @@
 				76BB2E4614C668EF0030E504 /* NSDictionary_JSONExtensions.m in Sources */,
 				76C43ED514C756480009F29A /* TweetsTablesView.m in Sources */,
 				76C43ED914C7960F0009F29A /* TweetUserInfo.m in Sources */,
+				763212E014D4C4E80048C75A /* EventsTable.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
