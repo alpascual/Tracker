@@ -74,9 +74,14 @@
         [myPrefs setObject:self.twitterUser.text forKey:@"twitteruser"];
         [myPrefs synchronize];
         
-        EventViewController *event = [[EventViewController alloc] initWithNibName:@"EventViewController" bundle:nil];
-        event.trackingManager = self.trackingManager;
-        [self presentModalViewController:event animated:YES];
+//        EventViewController *event = [[EventViewController alloc] initWithNibName:@"EventViewController" bundle:nil];
+//        event.trackingManager = self.trackingManager;
+//        [self presentModalViewController:event animated:YES];
+        
+        HitchhikerViewController *hitch = [[HitchhikerViewController alloc] initWithNibName:@"HitchhikerViewController" bundle:nil];
+        hitch.trackingManager = self.trackingManager;
+        [self presentModalViewController:hitch animated:YES];
+        
     }
     
     else

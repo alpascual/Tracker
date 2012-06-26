@@ -71,6 +71,10 @@
     self.gpsCounter = self.gpsCounter + 1;
 }
 
+- (void) submitLastNOW {
+    if ( self.lastLocation != nil )
+        [self submitPoint:self.lastLocation];
+}
 
 - (void) submitPoint:(CLLocation *) newPoint {
     if ( [self validNetworkConnection] == YES ) {

@@ -24,6 +24,8 @@
 		76BB2E4414C668EF0030E504 /* CJSONSerializedData.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BB2E3714C668EF0030E504 /* CJSONSerializedData.m */; };
 		76BB2E4514C668EF0030E504 /* CDataScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BB2E3A14C668EF0030E504 /* CDataScanner_Extensions.m */; };
 		76BB2E4614C668EF0030E504 /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BB2E3C14C668EF0030E504 /* NSDictionary_JSONExtensions.m */; };
+		76C3BE771599633100D5DC3D /* HitchhikerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C3BE751599633100D5DC3D /* HitchhikerViewController.m */; };
+		76C3BE781599633100D5DC3D /* HitchhikerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76C3BE761599633100D5DC3D /* HitchhikerViewController.xib */; };
 		76C43ED514C756480009F29A /* TweetsTablesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C43ED314C756480009F29A /* TweetsTablesView.m */; };
 		76C43ED614C756480009F29A /* TweetsTablesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76C43ED414C756480009F29A /* TweetsTablesView.xib */; };
 		76C43ED914C7960F0009F29A /* TweetUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C43ED814C7960F0009F29A /* TweetUserInfo.m */; };
@@ -87,6 +89,9 @@
 		76BB2E3B14C668EF0030E504 /* NSDictionary_JSONExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDictionary_JSONExtensions.h; sourceTree = "<group>"; };
 		76BB2E3C14C668EF0030E504 /* NSDictionary_JSONExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDictionary_JSONExtensions.m; sourceTree = "<group>"; };
 		76BB2E3D14C668EF0030E504 /* JSONRepresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONRepresentation.h; sourceTree = "<group>"; };
+		76C3BE741599633100D5DC3D /* HitchhikerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HitchhikerViewController.h; sourceTree = "<group>"; };
+		76C3BE751599633100D5DC3D /* HitchhikerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HitchhikerViewController.m; sourceTree = "<group>"; };
+		76C3BE761599633100D5DC3D /* HitchhikerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HitchhikerViewController.xib; sourceTree = "<group>"; };
 		76C43ED214C756480009F29A /* TweetsTablesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetsTablesView.h; sourceTree = "<group>"; };
 		76C43ED314C756480009F29A /* TweetsTablesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetsTablesView.m; sourceTree = "<group>"; };
 		76C43ED414C756480009F29A /* TweetsTablesView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TweetsTablesView.xib; sourceTree = "<group>"; };
@@ -95,14 +100,14 @@
 		76C43EDA14C7DE6B0009F29A /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
 		76C43EDB14C7DE6B0009F29A /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		76C43EDC14C7DE6B0009F29A /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
-		76CCB5DA14C6425E00552E3D /* Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		76CCB5DA14C6425E00552E3D /* TrackerHitchhiker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrackerHitchhiker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76CCB5DE14C6425E00552E3D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		76CCB5E014C6425E00552E3D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		76CCB5E214C6425E00552E3D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		76CCB5E614C6425E00552E3D /* Tracker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tracker-Info.plist"; sourceTree = "<group>"; };
+		76CCB5E614C6425E00552E3D /* TrackerHitchhiker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TrackerHitchhiker-Info.plist"; sourceTree = "<group>"; };
 		76CCB5E814C6425E00552E3D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		76CCB5EA14C6425E00552E3D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		76CCB5EC14C6425E00552E3D /* Tracker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tracker-Prefix.pch"; sourceTree = "<group>"; };
+		76CCB5EC14C6425E00552E3D /* TrackerHitchhiker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TrackerHitchhiker-Prefix.pch"; sourceTree = "<group>"; };
 		76CCB5ED14C6425E00552E3D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		76CCB5EE14C6425E00552E3D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		76CCB5F014C6425E00552E3D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -188,6 +193,16 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		76C3BE73159962EE00D5DC3D /* Hitchhiking */ = {
+			isa = PBXGroup;
+			children = (
+				76C3BE741599633100D5DC3D /* HitchhikerViewController.h */,
+				76C3BE751599633100D5DC3D /* HitchhikerViewController.m */,
+				76C3BE761599633100D5DC3D /* HitchhikerViewController.xib */,
+			);
+			name = Hitchhiking;
+			sourceTree = "<group>";
+		};
 		76CCB5CF14C6425E00552E3D = {
 			isa = PBXGroup;
 			children = (
@@ -204,7 +219,7 @@
 		76CCB5DB14C6425E00552E3D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				76CCB5DA14C6425E00552E3D /* Tracker.app */,
+				76CCB5DA14C6425E00552E3D /* TrackerHitchhiker.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -222,6 +237,7 @@
 		76CCB5E414C6425E00552E3D /* Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				76C3BE73159962EE00D5DC3D /* Hitchhiking */,
 				76BB2E2814C668EE0030E504 /* JSON */,
 				76BB2E2114C661E70030E504 /* MyAnnotation.h */,
 				76BB2E2214C661E70030E504 /* MyAnnotation.m */,
@@ -255,10 +271,10 @@
 		76CCB5E514C6425E00552E3D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				76CCB5E614C6425E00552E3D /* Tracker-Info.plist */,
+				76CCB5E614C6425E00552E3D /* TrackerHitchhiker-Info.plist */,
 				76CCB5E714C6425E00552E3D /* InfoPlist.strings */,
 				76CCB5EA14C6425E00552E3D /* main.m */,
-				76CCB5EC14C6425E00552E3D /* Tracker-Prefix.pch */,
+				76CCB5EC14C6425E00552E3D /* TrackerHitchhiker-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -304,9 +320,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		76CCB5D914C6425E00552E3D /* Tracker */ = {
+		76CCB5D914C6425E00552E3D /* TrackerHitchhiker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 76CCB5F814C6425E00552E3D /* Build configuration list for PBXNativeTarget "Tracker" */;
+			buildConfigurationList = 76CCB5F814C6425E00552E3D /* Build configuration list for PBXNativeTarget "TrackerHitchhiker" */;
 			buildPhases = (
 				76CCB5D614C6425E00552E3D /* Sources */,
 				76CCB5D714C6425E00552E3D /* Frameworks */,
@@ -316,9 +332,9 @@
 			);
 			dependencies = (
 			);
-			name = Tracker;
+			name = TrackerHitchhiker;
 			productName = Tracker;
-			productReference = 76CCB5DA14C6425E00552E3D /* Tracker.app */;
+			productReference = 76CCB5DA14C6425E00552E3D /* TrackerHitchhiker.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -329,7 +345,7 @@
 			attributes = {
 				LastUpgradeCheck = 0430;
 			};
-			buildConfigurationList = 76CCB5D414C6425E00552E3D /* Build configuration list for PBXProject "Tracker" */;
+			buildConfigurationList = 76CCB5D414C6425E00552E3D /* Build configuration list for PBXProject "TrackerHitchhiker" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -341,7 +357,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				76CCB5D914C6425E00552E3D /* Tracker */,
+				76CCB5D914C6425E00552E3D /* TrackerHitchhiker */,
 			);
 		};
 /* End PBXProject section */
@@ -372,6 +388,7 @@
 				76C43EDE14C7DE6B0009F29A /* Icon.png in Resources */,
 				76C43EDF14C7DE6B0009F29A /* Icon@2x.png in Resources */,
 				763212E114D4C4E80048C75A /* EventsTable.xib in Resources */,
+				76C3BE781599633100D5DC3D /* HitchhikerViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +418,7 @@
 				76C43ED514C756480009F29A /* TweetsTablesView.m in Sources */,
 				76C43ED914C7960F0009F29A /* TweetUserInfo.m in Sources */,
 				763212E014D4C4E80048C75A /* EventsTable.m in Sources */,
+				76C3BE771599633100D5DC3D /* HitchhikerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,10 +469,10 @@
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Tracker/Tracker-Prefix.pch";
-				INFOPLIST_FILE = "Tracker/Tracker-Info.plist";
+				GCC_PREFIX_HEADER = "Tracker/TrackerHitchhiker-Prefix.pch";
+				INFOPLIST_FILE = "Tracker/TrackerHitchhiker-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TrackerHitchhiker;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
@@ -509,10 +527,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Tracker/Tracker-Prefix.pch";
-				INFOPLIST_FILE = "Tracker/Tracker-Info.plist";
+				GCC_PREFIX_HEADER = "Tracker/TrackerHitchhiker-Prefix.pch";
+				INFOPLIST_FILE = "Tracker/TrackerHitchhiker-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TrackerHitchhiker;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -521,10 +539,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Tracker/Tracker-Prefix.pch";
-				INFOPLIST_FILE = "Tracker/Tracker-Info.plist";
+				GCC_PREFIX_HEADER = "Tracker/TrackerHitchhiker-Prefix.pch";
+				INFOPLIST_FILE = "Tracker/TrackerHitchhiker-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TrackerHitchhiker;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -532,7 +550,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		76CCB5D414C6425E00552E3D /* Build configuration list for PBXProject "Tracker" */ = {
+		76CCB5D414C6425E00552E3D /* Build configuration list for PBXProject "TrackerHitchhiker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				76CCB5F614C6425E00552E3D /* Debug */,
@@ -542,7 +560,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		76CCB5F814C6425E00552E3D /* Build configuration list for PBXNativeTarget "Tracker" */ = {
+		76CCB5F814C6425E00552E3D /* Build configuration list for PBXNativeTarget "TrackerHitchhiker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				76CCB5F914C6425E00552E3D /* Debug */,

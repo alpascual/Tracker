@@ -38,6 +38,7 @@
 - (void) changeDistanceFilter:(CLLocationDistance)filter;
 - (void) submitPoint:(CLLocation *) newPoint;
 -(BOOL) validNetworkConnection;
+- (void) submitLastNOW;
 
 
 @end

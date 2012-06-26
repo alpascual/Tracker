@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "EventViewController.h"
 #import "TrackingManager.h"
+#import "HitchhikerViewController.h"
 
 @interface ViewController : UIViewController
 

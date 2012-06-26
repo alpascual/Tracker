@@ -15,5 +15,6 @@
 
 @property (nonatomic, strong) IBOutlet UITextField *hashtag;
 @property (nonatomic, strong) TrackingManager *trackingManager; 
+@property (nonatomic, strong) NSTimer *startTimer;
 
 @end

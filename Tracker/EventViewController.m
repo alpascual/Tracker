@@ -12,6 +12,7 @@
 
 @synthesize hashtag = _hashtag;
 @synthesize trackingManager = _trackingManager;
+@synthesize startTimer = _startTimer;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -35,13 +36,25 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.hashtag.text = @"WWDC";
     
     NSUserDefaults *myPrefs = [NSUserDefaults standardUserDefaults]; 
-    if ( [myPrefs objectForKey:@"hashtag"] != nil)
-    {
-        self.hashtag.text = [myPrefs objectForKey:@"hashtag"];
-    }
+    [myPrefs setObject:@"WWDC" forKey:@"hashtag"];
+    [myPrefs synchronize];
+    
+    self.startTimer = [NSTimer scheduledTimerWithTimeInterval:(1.5) target:self selector:@selector(timerToRefreshFunc:) userInfo:nil repeats:NO];
+    
+//    if ( [myPrefs objectForKey:@"hashtag"] != nil)
+//    {
+//        self.hashtag.text = [myPrefs objectForKey:@"hashtag"];
+//    }
 
+}
+
+- (void)timerToRefreshFunc:(NSTimer *)timer {
+    MapViewController *map = [[MapViewController alloc] initWithNibName:@"MapViewController" bundle:nil];
+    map.trackingManager = self.trackingManager;
+    [self presentModalViewController:map animated:YES];
 }
 
 - (void)viewDidUnload
